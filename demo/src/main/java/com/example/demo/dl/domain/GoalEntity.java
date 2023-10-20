@@ -2,12 +2,12 @@ package com.example.demo.dl.domain;
 
 import java.time.LocalDate;
 
-public class Goal {
+public class GoalEntity {
     private Long goalId;
     private String name;
     private double targetAmount;
     private double currentAmount;
-    private Date targetDate;
+    private LocalDate targetDate;
     private boolean achieved;
 
     public Long getGoalId() {
@@ -42,11 +42,11 @@ public class Goal {
         this.currentAmount = currentAmount;
     }
 
-    public Date getTargetDate() {
+    public LocalDate getTargetDate() {
         return targetDate;
     }
 
-    public void setTargetDate(Date targetDate) {
+    public void setTargetDate(LocalDate targetDate) {
         this.targetDate = targetDate;
     }
 
