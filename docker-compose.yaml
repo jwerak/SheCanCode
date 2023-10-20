@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./demo
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: scc-backend
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    depends_on:
+      - db
+
+  db:
+    image: "postgres:latest"
+    ports:
+      - "5432:5432"
+    container_name: scc-database
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
