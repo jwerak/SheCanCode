@@ -1,8 +1,11 @@
 package com.example.demo.dl.domain;
 
-import java.time.LocalDate;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
 public class RecommendationEntity {
+    @Id
     private Long recommendationId;
     private String title;
     private String description;

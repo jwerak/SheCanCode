@@ -1,8 +1,13 @@
 package com.example.demo.dl.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.time.LocalDate;
 
+@Entity
 public class SpendingEntity {
+    @Id
     private Long transactionId;
     private LocalDate date;
     private String description;

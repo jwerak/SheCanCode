@@ -1,6 +1,11 @@
 package com.example.demo.dl.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class CategoryEntity {
+    @Id
     private Long categoryId;
     private String categoryName;
     private String description;

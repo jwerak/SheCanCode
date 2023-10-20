@@ -1,6 +1,12 @@
 package com.example.demo.dl.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+
 public class AssetEntity {
+    @Id
     private Long assetId;
     private String assetName;
     private String assetType;

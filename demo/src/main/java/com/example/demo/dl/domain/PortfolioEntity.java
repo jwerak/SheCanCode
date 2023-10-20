@@ -1,12 +1,14 @@
 package com.example.demo.dl.domain;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 public class PortfolioEntity {
+    @Id
     private Long portfolioId;
     private UserEntity user;
     private String portfolioName;
