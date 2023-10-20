@@ -25,6 +25,20 @@ public class PortfolioEntity {
     // add transaction history?
     private String status;
 
+    public PortfolioEntity(Long portfolioId, UserEntity user, String portfolioName, LocalDate creationDate, LocalDate updatedDate, List<AssetEntity> assets, Long totalPortfolioValue, String status) {
+        this.portfolioId = portfolioId;
+        this.user = user;
+        this.portfolioName = portfolioName;
+        this.creationDate = creationDate;
+        this.updatedDate = updatedDate;
+        this.assets = assets;
+        this.totalPortfolioValue = totalPortfolioValue;
+        this.status = status;
+    }
+
+    public PortfolioEntity() {
+    }
+
     public Long getPortfolioId() {
         return portfolioId;
     }

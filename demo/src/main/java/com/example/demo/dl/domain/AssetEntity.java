@@ -4,7 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-
 public class AssetEntity {
     @Id
     private Long assetId;
@@ -13,6 +12,18 @@ public class AssetEntity {
     private Long riskLevel;
     private String description;
     private Long assetPrice;
+
+    public AssetEntity(Long assetId, String assetName, String assetType, Long riskLevel, String description, Long assetPrice) {
+        this.assetId = assetId;
+        this.assetName = assetName;
+        this.assetType = assetType;
+        this.riskLevel = riskLevel;
+        this.description = description;
+        this.assetPrice = assetPrice;
+    }
+
+    public AssetEntity() {
+    }
 
     public Long getAssetId() {
         return assetId;
