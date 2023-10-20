@@ -8,4 +8,35 @@ public class Spending {
     private String description;
     private Long amount;
 
+    public Long getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(Long transactionId) {
+        this.transactionId = transactionId;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Long getAmount() {
+        return amount;
+    }
+
+    public void setAmount(Long amount) {
+        this.amount = amount;
+    }
 }
