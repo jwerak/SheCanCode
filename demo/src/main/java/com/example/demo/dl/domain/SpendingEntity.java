@@ -2,7 +2,7 @@ package com.example.demo.dl.domain;
 
 import java.time.LocalDate;
 
-public class Spending {
+public class SpendingEntity {
     private Long transactionId;
     private LocalDate date;
     private String description;
