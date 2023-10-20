@@ -2,6 +2,8 @@ package com.example.demo.dl.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -10,10 +12,14 @@ import java.util.List;
 public class PortfolioEntity {
     @Id
     private Long portfolioId;
+
+    @OneToOne
     private UserEntity user;
     private String portfolioName;
     private LocalDate creationDate;
     private LocalDate updatedDate;
+
+    @OneToMany
     private List<AssetEntity> assets;
     private Long totalPortfolioValue;
     // add transaction history?

@@ -1,7 +1,6 @@
 package com.example.demo.dl.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class RecommendationEntity {
@@ -9,7 +8,11 @@ public class RecommendationEntity {
     private Long recommendationId;
     private String title;
     private String description;
+
+    @ManyToOne
     private UserEntity user;
+
+    @OneToOne
     private GoalEntity Goal;
 
     public Long getRecommendationId() {

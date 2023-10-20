@@ -12,7 +12,6 @@ public class IncomeEntity {
     private LocalDate date;
     private Long amount;
     private String description;
-    private String source;
 
     public Long getIncomeId() {
         return incomeId;
@@ -46,11 +45,4 @@ public class IncomeEntity {
         this.description = description;
     }
 
-    public String getSource() {
-        return source;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
 }
