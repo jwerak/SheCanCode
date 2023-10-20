@@ -1,26 +1,18 @@
-package com.example.demo.dl.domain;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+package com.example.demo.pl.dto;
 
 import java.time.LocalDate;
 
-@Entity
-public class IncomeEntity {
-    @Id
+public class IncomeDto {
     private Long incomeId;
     private LocalDate date;
     private Long amount;
     private String description;
 
-    public IncomeEntity(Long incomeId, LocalDate date, Long amount, String description) {
+    public IncomeDto(Long incomeId, LocalDate date, Long amount, String description) {
         this.incomeId = incomeId;
         this.date = date;
         this.amount = amount;
         this.description = description;
-    }
-
-    public IncomeEntity() {
     }
 
     public Long getIncomeId() {
@@ -54,5 +46,4 @@ public class IncomeEntity {
     public void setDescription(String description) {
         this.description = description;
     }
-
 }

@@ -15,6 +15,18 @@ public class GoalEntity {
     private LocalDate targetDate;
     private boolean achieved;
 
+    public GoalEntity(Long goalId, String name, double targetAmount, double currentAmount, LocalDate targetDate, boolean achieved) {
+        this.goalId = goalId;
+        this.name = name;
+        this.targetAmount = targetAmount;
+        this.currentAmount = currentAmount;
+        this.targetDate = targetDate;
+        this.achieved = achieved;
+    }
+
+    public GoalEntity() {
+    }
+
     public Long getGoalId() {
         return goalId;
     }

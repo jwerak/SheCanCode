@@ -12,6 +12,17 @@ public class CategoryEntity {
     private Long budgetAllocation;
     private Long monthlyAverage;
 
+    public CategoryEntity(Long categoryId, String categoryName, String description, Long budgetAllocation, Long monthlyAverage) {
+        this.categoryId = categoryId;
+        this.categoryName = categoryName;
+        this.description = description;
+        this.budgetAllocation = budgetAllocation;
+        this.monthlyAverage = monthlyAverage;
+    }
+
+    public CategoryEntity() {
+    }
+
     public Long getCategoryId() {
         return categoryId;
     }

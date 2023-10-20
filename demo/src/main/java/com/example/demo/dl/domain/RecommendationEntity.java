@@ -15,6 +15,17 @@ public class RecommendationEntity {
     @OneToOne
     private GoalEntity Goal;
 
+    public RecommendationEntity(Long recommendationId, String title, String description, UserEntity user, GoalEntity goal) {
+        this.recommendationId = recommendationId;
+        this.title = title;
+        this.description = description;
+        this.user = user;
+        Goal = goal;
+    }
+
+    public RecommendationEntity() {
+    }
+
     public Long getRecommendationId() {
         return recommendationId;
     }

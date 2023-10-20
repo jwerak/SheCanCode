@@ -1,26 +1,18 @@
-package com.example.demo.dl.domain;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+package com.example.demo.pl.dto;
 
 import java.time.LocalDate;
 
-@Entity
-public class SpendingEntity {
-    @Id
+public class SpendingDto {
     private Long transactionId;
     private LocalDate date;
     private String description;
     private Long amount;
 
-    public SpendingEntity(Long transactionId, LocalDate date, String description, Long amount) {
+    public SpendingDto(Long transactionId, LocalDate date, String description, Long amount) {
         this.transactionId = transactionId;
         this.date = date;
         this.description = description;
         this.amount = amount;
-    }
-
-    public SpendingEntity() {
     }
 
     public Long getTransactionId() {

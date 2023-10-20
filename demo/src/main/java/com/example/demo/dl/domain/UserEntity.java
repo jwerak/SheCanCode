@@ -11,6 +11,16 @@ public class UserEntity {
     private String password;
     private boolean active;
 
+    public UserEntity(Long userId, String email, String password, boolean active) {
+        this.userId = userId;
+        this.email = email;
+        this.password = password;
+        this.active = active;
+    }
+
+    public UserEntity() {
+    }
+
     public Long getUserId() {
         return userId;
     }
