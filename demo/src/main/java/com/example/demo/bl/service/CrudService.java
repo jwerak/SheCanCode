@@ -1,7 +1,7 @@
 package com.example.demo.bl.service;
 
 
-import com.example.demo.dl.dao.IRepository;
+import com.example.demo.dl.dao.interfaces.IRepository;
 
 import java.util.Optional;
 

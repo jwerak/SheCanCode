@@ -2,9 +2,11 @@ package com.example.demo.pl.dto.converters;
 
 import com.example.demo.dl.domain.IncomeEntity;
 import com.example.demo.pl.dto.IncomeDto;
+import org.springframework.stereotype.Component;
 
 import java.util.function.Function;
 
+@Component
 public class IncomeDtoToEntity implements Function<IncomeDto, IncomeEntity> {
 
     @Override

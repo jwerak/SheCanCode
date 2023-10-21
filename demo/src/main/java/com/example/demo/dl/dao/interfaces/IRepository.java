@@ -1,4 +1,4 @@
-package com.example.demo.dl.dao;
+package com.example.demo.dl.dao.interfaces;
 
 import java.util.List;
 import java.util.Optional;
